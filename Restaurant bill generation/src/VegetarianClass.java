@@ -19,7 +19,7 @@ public class VegetarianClass {
     static ArrayList<Integer> vegindexes = new ArrayList<>();
     static void veg_frame() {
         try {
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/restraunt", "root", "system");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/restaurant", "root", "system");
             Statement st=con.createStatement();
             ResultSet rs=st.executeQuery("select * from veg");
             while(rs.next())
