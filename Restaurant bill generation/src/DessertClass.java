@@ -19,7 +19,7 @@ public class DessertClass {
     static ArrayList<Integer> dessertindexes = new ArrayList<>();
     static void dessert_frame() {
         try {
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/restraunt", "root", "system");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/restaurant", "root", "system");
             Statement st=con.createStatement();
             ResultSet rs=st.executeQuery("select * from desserts");
             while(rs.next())
